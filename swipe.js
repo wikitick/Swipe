@@ -256,7 +256,7 @@ function Swipe(container, options) {
 
     },
     start: function(event) {
-
+      if (options.disableTouch) return;
       var touches = event.touches[0];
 
       // measure start values
